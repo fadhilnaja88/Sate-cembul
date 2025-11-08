@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sate Kambing Muda Cembul</title>
+  <meta name="description" content="Sate Kambing Muda Cembul — cita rasa legendaris khas Bojong Minggir, Pekalongan. Empuk, gurih, dan nikmat.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="pp sate.png">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="pp sate.png" alt="Logo Sate Cembul">
+      <h1>Sate Cembul</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#" class="active">Beranda</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Sate Kambing Muda Cembul</h2>
+      <p>“Empuknya daging muda, gurihnya bumbu legendaris.”</p>
+      <div class="buttons">
+        <a href="menu.html" class="btn-primary">Lihat Menu</a>
+        <a href="https://www.tiktok.com/@cembul271022" target="_blank" class="btn-tiktok">Lihat di TikTok</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section class="about fade-in">
+    <h2>Tentang Kami</h2>
+    <p>
+      Sate Cembul merupakan tempat makan favorit yang menyajikan 
+      <strong>sate kambing muda khas Tegal</strong> dengan daging empuk dan bumbu meresap.
+      Berlokasi di Jl. Raya Bojong Minggir, kami buka setiap hari pukul <strong>10.00–22.00 WIB</strong>.
+      Cocok untuk makan bersama keluarga, teman, atau rekan kerja.
+    </p>
+  </section>
+
+  <!-- Lokasi -->
+  <section class="lokasi fade-in">
+    <h2>Lokasi Kami</h2>
+    <p>📍 Depan, Pulorejo, Bojong Minggir, Kec. Bojong, Kabupaten Pekalongan, Jawa Tengah 51156</p>
+    <iframe 
+      src="https://www.google.com/maps?q=Depan,+Pulorejo,+Bojong+Minggir,+Kabupaten+Pekalongan,+Jawa+Tengah+51156&output=embed"
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sate Kambing Muda Cembul | Bojong Minggir, Pekalongan</p>
+  </footer>
+
+  <!-- Tombol WhatsApp -->
+  <a href="https://wa.me/6281320698070" target="_blank" class="whatsapp-float">
+    <img src="wa.png" alt="WhatsApp">
+  </a>
+
+  <script>
+    // efek fade-in
+    const fadeElements = document.querySelectorAll('.fade-in');
+    window.addEventListener('scroll', () => {
+      fadeElements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          el.classList.add('show');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
